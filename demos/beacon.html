@@ -1,0 +1,7 @@
+<h1>refresh this page, see what happens in the commandline console.</h1>
+
+<script>
+window.addEventListener('unload', function (event) {
+  navigator.sendBeacon('/log', 'foo=bar');
+});
+</script>

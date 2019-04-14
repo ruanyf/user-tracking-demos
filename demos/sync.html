@@ -1,0 +1,10 @@
+<h1>refresh this page, see what happens in the commandline console.</h1>
+
+<script>
+window.addEventListener('unload', function (event) {
+  let xhr = new XMLHttpRequest();
+  xhr.open('post', '/log', false);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.send('foo=bar');
+});
+</script>

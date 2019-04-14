@@ -1,0 +1,18 @@
+{
+  "name": "user tracking demos",
+  "version": "1.0.0",
+  "description": "demos of tracking users with JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["tracking"],
+  "author": "Ruan Yifeng",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-route": "^3.2.0",
+    "koa-static": "^5.0.0"
+  }
+}

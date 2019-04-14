@@ -1,0 +1,22 @@
+<a id="target" href="https://baidu.com">click</a>
+
+<script>
+const clickTime = 350;
+const theLink = document.getElementById('target');
+
+function log() {
+  let xhr = new XMLHttpRequest();
+  xhr.open('post', '/log', true);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.send('foo=bar');
+}
+
+theLink.addEventListener('click', function (event) {
+  event.preventDefault();
+  log();
+
+  setTimeout(function () {
+    window.location.href = theLink.getAttribute('href');
+  }, clickTime);
+});
+</script>

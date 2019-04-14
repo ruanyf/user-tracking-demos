@@ -1,0 +1,19 @@
+<h1>refresh this page, see what happens in the commandline console.</h1>
+
+<script>
+function log() {
+  let xhr = new XMLHttpRequest();
+  xhr.open('post', '/log', true);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.send('foo=bar');
+}
+
+window.addEventListener('unload', function(event) {
+  log();
+
+  // a time-consuming operation
+  for (let i = 1; i < 10000; i++) {
+    for (let m = 1; m < 10000; m++) { continue; }
+  }
+});
+</script>
