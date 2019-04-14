@@ -21,7 +21,7 @@ Install the dependences, then launch the server.
 
 ```bash
 $ npm install
-$ node server
+$ node server.js
 ```
 
-Visit http://localhost:3000 in your browser. Follow the instruction on the page, the watch what happens in the commandline.
+Visit http://localhost:3000 in your browser. Follow the instruction on the page, then watch what happens in the commandline.
