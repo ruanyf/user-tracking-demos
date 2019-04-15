@@ -1,6 +1,6 @@
-A couple of demos of user tracking with JavaScript.
+A couple of demos of user tracking with JavaScript. 
 
-I show some methods how to send user data back into the server.
+I show some methods how to send user data back into the server. More details in my [blog article](http://www.ruanyifeng.com/blog/2019/04/user-tracking.html) (in Chinese).
 
 - [Sync AJAX](demos/sync.html)
 - [Async AJAX + sync operations](demos/loop.html)
